@@ -1,0 +1,23 @@
+{
+  "name": "TheCryptoOrganizer",
+  "version": "1.0.0",
+  "description": "This Mobile app helps you to organize your portfolio of investments in DD Corporation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danbatista/TheCryptoOrganizer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danbatista/TheCryptoOrganizer/issues"
+  },
+  "homepage": "https://github.com/danbatista/TheCryptoOrganizer#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
