@@ -1,4 +1,7 @@
-import React, { Component } from 'react';
+ /*eslint-disable*/
+import React, {Component} from 'react';
+
+import Main from './pages/main';
 
 import './styles.css';
 
@@ -10,6 +13,7 @@ const App = () => (
   
         <div className="App-header">
       <Header />
+      <Main />
       </div> 
      
 );
