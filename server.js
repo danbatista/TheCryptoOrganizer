@@ -1,19 +1,19 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const requireDir = require('require-dir');
+const uri = "mongodb+srv://dbadmin:55750000@thecryptodatabase-fosfg.gcp.mongodb.net/test?retryWrites=true&w=majority";
 //Starting  App;
 const app = express();
 
 // Starting DB
-mongoose.connect('mongodb://localhost:27017/nodeapi', {useUnifiedTopology:true});
+mongoose.connect(uri, {useNewUrlParser:true, useUnifiedTopology:true})
+.then(()=> console.log('Database is working...'))
+.catch(e => console.log(e));
 
 requireDir('./src/models');
 
-// Starting Mess with DB
-
-
-
 //Rotas
+
 app.use('/api', require('./src/routes'));
 
 
