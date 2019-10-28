@@ -7,8 +7,12 @@ const RentabilitySchema = new mongoose.Schema({
         required: true,
     },
     data:{
-        type: Date,
+        type: String,
         required: true,
+    },
+    conta:{
+        type: String,
+        required: false,
     },
 });
 RentabilitySchema.plugin(mPaginate);

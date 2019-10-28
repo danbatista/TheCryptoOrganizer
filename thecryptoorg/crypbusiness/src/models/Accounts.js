@@ -11,13 +11,17 @@ const AccountSchema = new mongoose.Schema({
         required: true,
     },
     data:{
-        type: Date,
+        type: String,
         required: true,
     },
     foruser:{
         type: String,
         required:true, 
-    }
+    }, 
+    rentabilidade:{
+        type: String,
+        required: false,
+    },
 });
 AccountSchema.plugin(mPaginate);
 mongoose.model('Account', AccountSchema);

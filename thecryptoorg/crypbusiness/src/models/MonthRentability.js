@@ -6,8 +6,8 @@ const rMonthSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    data:{
-        type: Date,
+    mes:{
+        type: String,
         required: true,
     },
 });
