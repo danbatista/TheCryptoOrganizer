@@ -10,6 +10,8 @@ const UserController = require('./controllers/UserController');
 
 //listALL
 routes.get('/users',UserController.index);
+//GetByEmailAndPassword
+routes.get('/login/:email',UserController.getLogin);
 //findBYID
 routes.get('/users/:id', UserController.show);
 //add

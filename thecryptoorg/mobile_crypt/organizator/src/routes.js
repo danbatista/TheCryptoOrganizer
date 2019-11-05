@@ -2,21 +2,22 @@
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import Main from './pages/main';
-
+import Inicio from './pages/inicio';
 
 const RootStack = createStackNavigator(
-    {Main},
+    {Main, Inicio}, 
     {
       defaultNavigationOptions: {
           headerStyle:{
-              backgroundColor: "#DA552F"
+              backgroundColor: "#c0392b",
+             
               
           },
-          headerTintColor:"#FFFF",
-          
+          headerTintColor:"white",
       },
 
     });
+    
 const AppContainer = createAppContainer(RootStack);
 
 export default AppContainer;

@@ -23,6 +23,14 @@ module.exports = {
         const Users  = await User.findById(req.params.id);
         return res.json(Users);
     }, 
+  // recebe  o email e a senha 
+    async getLogin(req, res){
+        console.log(req.params.email);
+        const data = {email : req.params.email};
+        const Users  = await User.findOne(data);
+        console.log("Achei:__>>" + Users._id);
+        return res.json(Users);
+    }, 
     //Update
     
     async update(req,res){
